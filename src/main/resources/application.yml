@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:/home/loony/IdeaProjects/medtest/src/main/resources/medtest
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  flyway:
+    enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+jwt:
+  secret: helloworld
+  jwtExpirationMs: 86400000
